@@ -50,9 +50,7 @@ ayude a interactuar y entender mejor esos datos.
 
 Estos son datos que te proponemos:
 
-- [Indicadores de desarrollo del Banco Mundial](src/data/worldbank/worldbank.json)
-  de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
-  indicadores demográficos, económicos y comerciales.
+
 - [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
@@ -63,10 +61,10 @@ Estos son datos que te proponemos:
   Este set de datos muestra la lista de jugadores en una liga del
   juego League of Legends (LoL), puedes revisar la documentación de su API en
   este [link](https://developer.riotgames.com/api-methods/).
-- [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicicleta, ...).
+- [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
+  Este set nos proporciona la lista de los personajes de la serie Rick and
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
+
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún cálculo agregado**. Como aclaración,
@@ -110,7 +108,7 @@ Dicho en palabras sencillas, aprenderás a:
 - Entender los beneficios y complejidades de **trabajar en equipo** en un
   ambiente de incertidumbre.
 
-## Parte Obligatoria
+## Alcances esperados
 
 Los criterios para considerar que has completado este proyecto son:
 
@@ -212,7 +210,7 @@ e independientes del DOM**. Estas funciones serán después usadas desde el arch
 `src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
 filtrado, ordenado, ...).
 
-## Parte Opcional (Hacker edition)
+## Hacker edition
 
 Features/características extra sugeridas:
 
@@ -223,7 +221,7 @@ Features/características extra sugeridas:
 - Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
   ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
   o [Google Charts](https://developers.google.com/chart/).
-- 100% Coverage
+
 
 ## Consideraciones técnicas
 
@@ -231,7 +229,7 @@ La lógica del proyecto debe estar implementada completamente en JavaScript
 (ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
 frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
 con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#parte-opcional-hacker-edition) más arriba.
+[_Hacker Edition_](#parte-opcional-hacker-edition) más arriba.
 
 No se debe utilizar la _pseudo-variable_ `this`.
 
@@ -329,67 +327,6 @@ asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_A
 Tendrás también que completar las pruebas unitarias de las funciones
 implementadas en el archivo `data.js`.
 
-## Evaluación
-
-Recuerda revisar la [rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada habilidad y cada nivel. Esta es una
-lista de todas las habilidades involucradas en este proyecto y que evaluaremos
-cuando lo completes:
-
-### General
-
-| Característica/Habilidad |
-| ------------------------ |
-| Completitud              |
-
-### Tech
-
-| Habilidad              |
-| ---------------------- |
-| **JavaScript**         |
-| Estilo                 |
-| Nomenclatura/semántica |
-| Funciones/modularidad  |
-| Estructuras de datos   |
-| Tests                  |
-| **HTML**               |
-| Validación             |
-| Estilo                 |
-| Semántica              |
-| **CSS**                |
-| DRY                    |
-| Responsive             |
-| **SCM**                |
-| Git                    |
-| GitHub                 |
-| **CS**                 |
-| Lógica                 |
-| Arquitectura           |
-
-### UX
-
-| Habilidad       |
-| --------------- |
-| User Centricity |
-| Entrevistas     |
-| Contraste       |
-| Alineación      |
-| Jerarquía       |
-| Tipografía      |
-| Color           |
-
-### Habilidades Blandas
-
-| Habilidad                    |
-| ---------------------------- |
-| Planificación y organización |
-| Autoaprendizaje              |
-| Solución de problemas        |
-| Dar y recibir feedback       |
-| Adaptabilidad                |
-| Trabajo en equipo            |
-| Comunicación eficaz          |
-| Presentaciones               |
 
 ---
 
@@ -477,7 +414,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [ ] UI: Permite filtrar data en base a una condición.
 
-## Checklist (Opcional)
+## Checklist (Hacker Edition)
 
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).

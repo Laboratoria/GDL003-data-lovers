@@ -20,7 +20,7 @@ No estás compitiendo con nadie más que contigo misma.
 Completa el proyecto original con todo lo que se especifica en
 la [parte obligatoria](README.md#parte-obligatoria).
 
-### 2. Si completaste la "Parte Obligatoria"
+### 2. Si completaste "Los alcances esperados"
 
 Tienes estas opciones:
 
