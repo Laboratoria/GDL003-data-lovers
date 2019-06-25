@@ -1,0 +1,12 @@
+
+body{
+    /*background-color:#7CBB7A;*/
+    background-image: url(img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    font-family:"Open sans", sans-serif;
+    margin: 0;
+  }
+  * {
+    text-align: center;
+  }
