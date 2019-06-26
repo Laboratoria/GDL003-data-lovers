@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <!-- <Encabezado>--> 
+      <header>Pokemon Zone</header>
+  <!-- <Indicaciones>--> 
+      <section class="indications">
+        Si radicas en Guadalajara, Tlaquepaque o Tonala te ayudaremos a localizar el Pokemon que necesitas, utiliza directamente el buscador o selecciona la zona en la que te ubiques</h1> 
+      </section>
+  <!-- <Boton de busqueda>--> 
+      <section class="search">
+        <label for="name">¿Qué Pokemon buscas?</label>
+        <input type="name" class="name" placeholder="Nombre del Pokemon">
+        <button id="search" class="button">Search</button>
+      </section>
+  <!-- <Mostrar Pokemon Nombrado>--> 
+      <p></p>
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="./data/pokemon/pokemon.json"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
