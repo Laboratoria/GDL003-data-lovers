@@ -1,12 +1,20 @@
 //INDEX
-
 let uno = Object.keys(window.LOL.data);
 
-  for (let x in uno) {
-    document.getElementById("root").innerHTML += uno[x] + "<br>";
-console.log(x);
 
-  };
+  for (let i in uno) {
+    var y = document.createElement("TD");
+    y.setAttribute("id", "myTr");
+  //  document.getElementById("root").innerHTML += uno[i] + "<br>";
+    var x = document.createElement("TR")
+    var t = document.createTextNode(uno[i]+"\n");
+    x.appendChild(t);
+    document.getElementById("myTable").appendChild(y);
+    document.getElementById("myTr").appendChild(x);
+
+  //  console.log(uno[i]);
+
+ };
 /* for(let i=0; i<=uno.length; i++){
    let vista  = uno[i];
    let muestra=JSON.stringify(vista);

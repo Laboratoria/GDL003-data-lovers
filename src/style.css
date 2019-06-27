@@ -1,6 +1,6 @@
 
 body{
-    /*background-color:#7CBB7A;*/
+  /*  background-color:white;*/
     background-image: url(img/Fondo.jpg);
     background-repeat: no-repeat;
     background-size: 1400px;
@@ -10,3 +10,6 @@ body{
   * {
     text-align: center;
   }
+table, tr {
+  border: 1px solid black;
+}
