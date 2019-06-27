@@ -8,7 +8,7 @@ let uno = Object.keys(window.LOL.data);
     y.setAttribute("id", "myTr");
   //  document.getElementById("root").innerHTML += uno[i] + "<br>";
     let x = document.createElement("TR")
-    let t = document.createTextNode(uno[i]+" " + imagen);
+    let t = document.createTextNode(uno[i] + "\n" + imagen + "\n");
     x.appendChild(t);
     document.getElementById("myTable").appendChild(y);
     document.getElementById("myTr").appendChild(x);
