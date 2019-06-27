@@ -1,6 +1,6 @@
 //INDEX
+let dataLol =window.LOL.data;
 let uno = Object.keys(window.LOL.data);
-
 
   for (let i in uno) {
     var y = document.createElement("TD");
