@@ -3,11 +3,12 @@ let dataLol =window.LOL.data;
 let uno = Object.keys(window.LOL.data);
 
   for (let i in uno) {
-    var y = document.createElement("TD");
+    let imagen= dataLol[uno[i]].img;
+    let y = document.createElement("TD");
     y.setAttribute("id", "myTr");
   //  document.getElementById("root").innerHTML += uno[i] + "<br>";
-    var x = document.createElement("TR")
-    var t = document.createTextNode(uno[i]+"\n");
+    let x = document.createElement("TR")
+    let t = document.createTextNode(uno[i]+" " + imagen);
     x.appendChild(t);
     document.getElementById("myTable").appendChild(y);
     document.getElementById("myTr").appendChild(x);
@@ -22,7 +23,6 @@ let uno = Object.keys(window.LOL.data);
 
   for (let x in uno) {
     let imagen= dataLol[uno[x]].img;
-    html= >
     document.getElementById("root").innerHTML += uno[x] +"<br>" +  imagen + "<br>";
 console.log(x);
 console.log(imagen);
