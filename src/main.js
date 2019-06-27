@@ -16,6 +16,34 @@ let uno = Object.keys(window.LOL.data);
 
  };
 /* for(let i=0; i<=uno.length; i++){
+
+let dataLol =window.LOL.data;
+let uno = Object.keys(window.LOL.data);
+
+  for (let x in uno) {
+    let imagen= dataLol[uno[x]].img;
+    html= >
+    document.getElementById("root").innerHTML += uno[x] +"<br>" +  imagen + "<br>";
+console.log(x);
+console.log(imagen);
+  };
+
+//document.getElementById('boton').addEventListener('click',cargarJson);
+
+/*function cargarJson(){
+  fetch("./data/lol/lol.json")
+  .then(function(res) {
+   return res.json();
+  })
+  .then(function(data){
+    console.log(data);
+  })
+}
+*/
+
+
+
+  /* for(let i=0; i<=uno.length; i++){
    let vista  = uno[i];
    let muestra=JSON.stringify(vista);
   document.write(vista+'<br>');
