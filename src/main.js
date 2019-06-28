@@ -2,8 +2,26 @@
 let dataLol =window.LOL.data;
 let uno = Object.keys(window.LOL.data);
 
+
+for (let i in uno) {
+  let image= dataLol[uno[i]].img;
+  let myImage = new Image(100, 200);
+  myImage.src = image;
+  console.log(myImage);
+
+   document.getElementById("galeria").innerHTML +=  " " + `<img src="${image}">`+ uno[i];
+   //document.querySelector(.mosaico).innerHTML +=  " " + `<img src="${image}">`+ uno[i] + "<br>" ;
+   
+
+//  console.log(uno[i]);
+};
+
+/*
   for (let i in uno) {
     let imagen= dataLol[uno[i]].img;
+    let showImg = "<img id="face" width="50" height="50">";
+    let faceImg = document.getElementById("face").src = imagen;
+    console.log(faceImg);
     let y = document.createElement("TD");
     y.setAttribute("id", "myTr");
   //  document.getElementById("root").innerHTML += uno[i] + "<br>";
@@ -14,8 +32,8 @@ let uno = Object.keys(window.LOL.data);
     document.getElementById("myTr").appendChild(x);
 
   //  console.log(uno[i]);
+ };*/
 
- };
 /* for(let i=0; i<=uno.length; i++){
 
 let dataLol =window.LOL.data;
