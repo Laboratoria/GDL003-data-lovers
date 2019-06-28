@@ -17,39 +17,9 @@ let uno = Object.keys(window.LOL.data);
     document.getElementById("myTable").appendChild(x);
 
   //  console.log(uno[i]);
- };
+ };*/
 
 /* for(let i=0; i<=uno.length; i++){
-<<<<<<< HEAD
-=======
-
-let dataLol =window.LOL.data;
-let uno = Object.keys(window.LOL.data);
-
-  for (let x in uno) {
-    let imagen= dataLol[uno[x]].img;
-    document.getElementById("root").innerHTML += uno[x] +"<br>" +  imagen + "<br>";
-console.log(x);
-console.log(imagen);
-  };
-
-//document.getElementById('boton').addEventListener('click',cargarJson);
-
-/*function cargarJson(){
-  fetch("./data/lol/lol.json")
-  .then(function(res) {
-   return res.json();
-  })
-  .then(function(data){
-    console.log(data);
-  })
-}
-*/
-
-
-
-  /* for(let i=0; i<=uno.length; i++){
->>>>>>> 2f0a9e210742a4ab7c53754842f8c889c1057bbe
    let vista  = uno[i];
    let muestra=JSON.stringify(vista);
   document.write(vista+'<br>');
