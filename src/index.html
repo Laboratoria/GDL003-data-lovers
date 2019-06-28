@@ -7,7 +7,9 @@
   </head>
   <body>
   <!-- <Encabezado>--> 
-      <header>Pokemon Zone</header>
+      <header>
+        <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190628/8250a7423815ea0a026b1df817dffd63.png" alt="fuente-pokemon" border="0"></a>
+      </header>
   <!-- <Indicaciones>--> 
       <section class="indications">
         Si radicas en Guadalajara, Tlaquepaque o Tonala te ayudaremos a localizar el Pokemon que necesitas, utiliza directamente el buscador o selecciona la zona en la que te ubiques</h1> 
@@ -19,9 +21,13 @@
         <button id="search" class="button">Search</button>
       </section>
   <!-- <Mostrar Pokemon Nombrado>--> 
-      <p></p>
+      <div id="content"></div>
+      <span id="result">Nada</span>
+          
+  
+          
     <div id="root"></div>
-    <script src="./data/pokemon/pokemon.json"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
