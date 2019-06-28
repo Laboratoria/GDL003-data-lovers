@@ -10,6 +10,6 @@ body{
   * {
     text-align: center;
   }
-table, tr {
+table, Tr {
   border: 1px solid black;
 }

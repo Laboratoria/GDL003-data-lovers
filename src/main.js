@@ -2,20 +2,23 @@
 let dataLol =window.LOL.data;
 let uno = Object.keys(window.LOL.data);
 
+
+
   for (let i in uno) {
-    let imagen= dataLol[uno[i]].img;
-    let y = document.createElement("TD");
-    y.setAttribute("id", "myTr");
-  //  document.getElementById("root").innerHTML += uno[i] + "<br>";
+    let imagen= dataLol[uno[i]].image;
+    let mostrar =`<img src="imagen">`;
+  //  let y = document.createElement("TD");
+  //  y.setAttribute("id", "myTr");
+  //document.getElementById("root").innerHTML +=  + "<br>";
     let x = document.createElement("TR")
-    let t = document.createTextNode(uno[i] + "\n" + imagen + "\n");
+    let t = document.createTextNode(uno[i] +" " + imagen );
     x.appendChild(t);
-    document.getElementById("myTable").appendChild(y);
-    document.getElementById("myTr").appendChild(x);
+    //document.getElementById("myTable").appendChild(y);
+    document.getElementById("myTable").appendChild(x);
 
   //  console.log(uno[i]);
-
  };
+
 /* for(let i=0; i<=uno.length; i++){
 <<<<<<< HEAD
 =======
