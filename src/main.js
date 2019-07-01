@@ -1,19 +1,49 @@
 //INDEX
-let dataLol =window.LOL.data;
-let uno = Object.keys(window.LOL.data);
+let dataLol =LOL.data;
+//let character = Object.keys(window.LOL.data);
+console.log(dataLol);
 
 
-for (let i in uno) {
-  let image= dataLol[uno[i]].img;
-  let myImage = new Image(100, 200);
-  myImage.src = image;
-  console.log(myImage);
 
-   document.getElementById("galeria").innerHTML +=  " " + `<img src="${image}">`+ uno[i];
+for (let propName in dataLol) {
+  //let image= dataLol[character[i]].img;
+ // let myImage = new Image(100, 200);
+  //myImage.src = image;
+  //console.log(myImage);
+  let value = dataLol[propName];
+  let image = value.img;
+  let title = value.title;
+  let attack=  value.info.attack;
+  let defense = value.info.defense; 
+  let magic = value.info.magic;
+  let difficulty = value.info.difficulty;
+  console.log(image);
+  console.log(title);
+  console.log(attack);
+  console.log(defense);
+  console.log(magic);
+  console.log(difficulty);
+
+
+  //let information = dataLol[character[i]].info;
+ // console.log(information);
+  //let infoLol=  Object.keys(information);
+  //console.log(infoLol);
+
+ document.getElementById("galeria").innerHTML += 
+  " " +
+  `<dl>
+  <dt><img src="${image}"></dt>
+  <dd>${propName}</dd>
+  <dt>${title}</dt>
+  <dd>ataque: ${attack}</dd>
+  <dd>defensa: ${defense}</dd>
+  <dd>magia: ${magic}</dd>
+  <dd>dificultad: ${difficulty}</dd>
+  </dl>` ;
+ //document.getElementById("galeria").innerHTML +=  " " + `<img src="${image}">`+ character[i] + " ";
    //document.querySelector(.mosaico).innerHTML +=  " " + `<img src="${image}">`+ uno[i] + "<br>" ;
-   
-
-//  console.log(uno[i]);
+  //  console.log(uno[i]);
 };
 
 /*
