@@ -4,9 +4,31 @@ html{
   min-height:100%;
   overflow-y:scroll;
   /*background:#000; */
-/*  background-color: black; fondo para hacer negro */ 
+/*  background-color: black; fondo para hacer negro */
   background-size: 100%;
   }
+
+/*body{
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+   padding:0;
+  }
+
+  *{
+    text-align: center;
+  }
+
+  table, tr {
+  border: 1px solid black;
+}
+
+
+
+dl {
+  /*width:75px;
+  height:75px;
+  float:left;
+
+}*/
 
 body {
   color: #a845ff;
