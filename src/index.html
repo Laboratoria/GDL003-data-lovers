@@ -2,31 +2,56 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+      <div id="root" class="container"></div>
   <!-- <Encabezado>--> 
       <header>
         <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190628/8250a7423815ea0a026b1df817dffd63.png" alt="fuente-pokemon" border="0"></a>
       </header>
   <!-- <Indicaciones>--> 
       <section class="indications">
-        Si radicas en Guadalajara, Tlaquepaque o Tonala te ayudaremos a localizar el Pokemon que necesitas, utiliza directamente el buscador o selecciona la zona en la que te ubiques</h1> 
+        Encuentra a tu pokemon favorito!
       </section>
   <!-- <Boton de busqueda>--> 
       <section class="search">
         <label for="name">¿Qué Pokemon buscas?</label>
-        <input type="name" class="name" placeholder="Nombre del Pokemon">
+        <input type="name" id="pokemonName" class="name" placeholder="Nombre del Pokemon">
         <button id="search" class="button">Search</button>
+      </section>
+  <!-- <Boton para mostrar todos los Pokemon>--> 
+      <section class="allPokemon">
+        <input type="button" id ="showAllPokemon" class="button" name="" value="See All Pokemon">
+      </section>
+  <!-- <Botones de filtrado por Tipo>--> 
+      <section class="buttonType" id= "buttonType">
+        <input type="image" id="Grass" class="buttonByType" title="Grass">
+        <input type="image" id="Poison" class="buttonByType" title="Poison">
+        <input type="image" id="Fire" class="buttonByType" title="Fire">
+        <input type="image" id="Flying" class="buttonByType" title="Flying">
+        <input type="image" id="Water" class="buttonByType" title="Water">
+        <input type="image" id="Bug" class="buttonByType" title="Bug">
+        <input type="image" id="Normal" class="buttonByType" title="Normal">
+        <input type="image" id="Electric" class="buttonByType" title="Electric">
+        <input type="image" id="Ground" class="buttonByType" title="Ground">
+        <input type="image" id="Fighting" class="buttonByType" title="Fighting">
+        <input type="image" id="Psychic" class="buttonByType" title="Psychic">
+        <input type="image" id="Rock" class="buttonByType" title="Rock">
+        <input type="image" id="Ice" class="buttonByType" title="Ice">
+        <input type="image" id="Ghost" class="buttonByType" title="Ghost">
+        <input type="image" id="Dragon" class="buttonByType" title="Dragon">
+  <!-- <Mostrar Todos los Pokemones>--> 
+      <div id= "contentAll" class="showAll"></div>
+  <!-- <Mostrar Filtrado>-->     
+        <span id= "showFilter"></span>
       </section>
   <!-- <Mostrar Pokemon Nombrado>--> 
       <div id="content"></div>
       <span id="result">Nada</span>
           
-  
-          
-    <div id="root"></div>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
