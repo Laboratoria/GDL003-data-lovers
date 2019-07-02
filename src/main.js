@@ -1,7 +1,12 @@
 //INDEX
 let dataLol =LOL.data;
 
+
 for (let propName in dataLol) {
+  //let image= dataLol[character[i]].img;
+ // let myImage = new Image(100, 200);
+  //myImage.src = image;
+  //console.log(myImage);
   let value = dataLol[propName];
   let image = value.img;
   let title = value.title;
@@ -32,4 +37,4 @@ for (let propName in dataLol) {
         </div>
       </div>`
 
-};
+
