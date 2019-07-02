@@ -97,7 +97,7 @@ h1 {
 .card .back {
   backface-visibility: hidden;
   box-sizing: border-box;
-  color: white;
+  color: black;
   display: block;
   font-size: 1.2em;
   height: 100%;
