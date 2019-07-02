@@ -1,6 +1,6 @@
 //INDEX
+const toShow =() =>{
 let dataLol =LOL.data;
-
 for (let propName in dataLol) {
   let value = dataLol[propName];
   let image = value.img;
@@ -18,10 +18,10 @@ for (let propName in dataLol) {
             <div class="card">
               <div class="front">
                 <h3 id= "picture"><img src="${image}"></h3>
-                <h1>${propName}</h1>
+                <h3>${propName}</h3>
               </div>
             <div class="back">
-              <h3>${propName}</h3>
+              <p>${propName}</p>
               <p>${title}</p>
               <p>ataque: ${attack}</p>
               <p>defensa: ${defense}</p>
@@ -33,3 +33,5 @@ for (let propName in dataLol) {
       </div>`
 
 };
+}
+document.getElementById("champions").addEventListener("click",toShow)
