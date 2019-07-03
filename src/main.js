@@ -1,5 +1,10 @@
 //INDEX
+document.getElementById("mapaRol").style.display='none'
+
 const toShow =() =>{
+
+document.getElementById("mapaRol").style.display='none'
+
 let dataLol =LOL.data;
 for (let propName in dataLol) {
   let value = dataLol[propName];
@@ -35,3 +40,11 @@ for (let propName in dataLol) {
 };
 }
 document.getElementById("champions").addEventListener("click",toShow)
+
+const mapByRol=()=> {
+document.getElementById("mapaRol").style.display= 'block';
+document.getElementById("galeria").style.display= "none"
+
+}
+
+document.getElementById("rol").addEventListener("click",mapByRol);
