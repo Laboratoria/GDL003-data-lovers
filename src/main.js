@@ -9,29 +9,40 @@ const toShow =() =>{
     let defense = value.info.defense;
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
-  
+    let tags = value.tags;
+    //console.log(tags);
+    
+    let tagsIndex = tags.indexOf('Fighter');
+    
+    //let tagsFilter = tags.filter(word => word == 'Fighter');
+    
+    //if (attack >= 8 ){
+    if (tagsIndex > -1){
+    console.log(propName);
+    console.log(tagsIndex);
+
     document.getElementById("galeria").innerHTML +=
-      " " +
-       `
-      <div class="boxesContainer">
-          <div class="cardBox">
-              <div class="card">
-                <div class="front">
-                  <h3 id= "picture"><img src="${image}"></h3>
-                  <h3>${propName}</h3>
-                </div>
-              <div class="back">
-                <p>${propName}</p>
-                <p>${title}</p>
-                <p>ataque: ${attack}</p>
-                <p>defensa: ${defense}</p>
-                <p>magia: ${magic}</p>
-                <p>dificultad: ${difficulty}</p>
+    " " +
+     `
+    <div class="boxesContainer">
+        <div class="cardBox">
+            <div class="card">
+              <div class="front">
+                <h3 id= "picture"><img src="${image}"></h3>
+                <h3>${propName}</h3>
               </div>
+            <div class="back">
+              <p>${propName}</p>
+              <p>${title}</p>
+              <p>ataque: ${attack}</p>
+              <p>defensa: ${defense}</p>
+              <p>magia: ${magic}</p>
+              <p>dificultad: ${difficulty}</p>
             </div>
           </div>
-        </div>`
-  
+        </div>
+      </div>`;
+    };
   };
-  }
-  document.getElementById("champions").addEventListener("click",toShow)
+};
+document.getElementById("champions").addEventListener("click",toShow);  
