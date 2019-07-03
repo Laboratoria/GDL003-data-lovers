@@ -37,4 +37,3 @@ for (let propName in dataLol) {
         </div>
       </div>`
 
-
