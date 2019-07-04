@@ -1,6 +1,9 @@
 //INDEX
+document.getElementById("mapaRol").style.display='none'
+
 const toShow =() =>{
   let dataLol =LOL.data;
+
   for (let propName in dataLol) {
     let value = dataLol[propName];
     let image = value.img;
@@ -11,11 +14,11 @@ const toShow =() =>{
     let difficulty = value.info.difficulty;
     let tags = value.tags;
     //console.log(tags);
-    
+
     let tagsIndex = tags.indexOf('Fighter');
-    
+
     //let tagsFilter = tags.filter(word => word == 'Fighter');
-    
+
     //if (attack >= 8 ){
     if (tagsIndex > -1){
     console.log(propName);
@@ -45,4 +48,13 @@ const toShow =() =>{
     };
   };
 };
-document.getElementById("champions").addEventListener("click",toShow);  
+
+document.getElementById("champions").addEventListener("click",toShow)
+
+const mapByRol=()=> {
+document.getElementById("mapaRol").style.display= 'block';
+document.getElementById("galeria").style.display= "none"
+
+}
+
+document.getElementById("rol").addEventListener("click",mapByRol);
