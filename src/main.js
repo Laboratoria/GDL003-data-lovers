@@ -13,6 +13,7 @@ const toShow =() =>{
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
     let tags = value.tags;
+    console.log(value);
     //console.log(tags);
 
     let tagsIndex = tags.indexOf('Fighter');
