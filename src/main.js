@@ -43,7 +43,8 @@ document.getElementById("galeria").style.display= "none"
 
   const pushBotton=()=>{
   let pushBottonTop=document.getElementById("TOP").value
-  console.log(pushBot Top);
+  pushBottonTop=1
+  console.log(pushBottonTop);
 
 
   }
