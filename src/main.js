@@ -12,18 +12,6 @@ const toShow =() =>{
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
 
-    //let tags = value.tags;
-    //console.log(tags);
-
-    //let tagsIndex = tags.indexOf('Fighter');
-
-    //let tagsFilter = tags.filter(word => word == 'Fighter');
-
-    //if (attack >= 8 ){
-    //if (tagsIndex > -1){
-    //console.log(propName);
-    //console.log(tagsIndex);
-
     document.getElementById("galeria").innerHTML +=
     " " +
      `
@@ -45,7 +33,6 @@ const toShow =() =>{
           </div>
         </div>
       </div>`;
-    //};
   };
 };
 
@@ -55,23 +42,14 @@ const mapByRol=()=> {
 document.getElementById("mapaRol").style.display= 'block';
 document.getElementById("galeria").style.display= "none"
 
+  const pushBotton=()=>{
+  let pushBottonTop=document.getElementById("TOP").value
+  console.log(pushBot Top);
+
+
+  }
+document.getElementById("TOP").addEventListener("click",pushBotton);
+
 }
 
 document.getElementById("rol").addEventListener("click",mapByRol);
-
-
-const filterDta =()=>{
-  let dataLol =LOL.data;
-  for (let propName in dataLol){
-    let value = dataLol[propName];
-    let tags = value.tags;
-    let tagsIndex = tags.indexOf('Fighter')
-    if (tagsIndex > -1){
-      console.log(propName);
-      console.log(tagsIndex);
-
-    }
-  }
-}
-
-document.getElementById("TOP").addEventListener("click",filterDta);
