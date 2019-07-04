@@ -4,7 +4,7 @@ html{
   min-height:100%;
   overflow-y:scroll;
   /*background:#000; */
-/*  background-color: black; fondo para hacer negro */
+ background-color: black;
   background-size: 100%;
   }
 
@@ -27,26 +27,25 @@ h3 {
   margin: 0 0 5% 0;
 }
 
-.productImagen{
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0;
-  padding: 0;
+.header{
+  background-image: url(https://www.cccneb.edu/programs/cccmart/gallery/graphic_arts/web/1803rigo/FinalProject/images/League_of_legends.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 25%;
+  padding-bottom: 0;
+  width:58.33%;
 }
 
-.menu{
-  background-color: purple;
-  margin-top: 0;
-  width: 100%;
-
+.champions .mapa .rol{
+  float: right;
 }
-
 
 .cardBox {
+  background-color: black;
   float: left;
-  font-size: 1.2em;
+  font-size: .75em;
   margin: 1% 0 0 1%;
-  perspective: 800px;
+  perspective: 100%;
   transition: all 0.3s ease 0s;
   width: 23.7%;
 }
@@ -67,7 +66,8 @@ h3 {
 }
 
 .card p {
-  margin-bottom: 1.8em;
+  margin-bottom: 1em;
+  font-size: 2em
 }
 
 .card .front,
@@ -121,16 +121,16 @@ h3 {
 .mapaRol{
   background-image: url(http://i.imgur.com/KxqgIoU.jpg);
   background-repeat: no-repeat;
-  background-size: 50%;
-  min-height:100%;
-  width: 100%;
-  padding: 100%;
+  background-size: 100%;
+  padding: 20%;  
+  padding-top: 0;
+  width:58.33%;
+
 
 }
 
-.TOP .MID .JUNGLE .BOT .SUPPORT{
-  position: relative;
-  top: 50%;
+}
 
+.TOP .JUNGLE .BOT .SUPPORT{
 
 }
