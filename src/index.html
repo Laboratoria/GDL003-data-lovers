@@ -8,25 +8,27 @@
   </head>
   <body>
       <div id="root" class="container"></div>
-  <!-- <Encabezado>--> 
+  <!-- <Tittle>--> 
       <header>
         <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/190628/8250a7423815ea0a026b1df817dffd63.png" alt="fuente-pokemon" border="0"></a>
       </header>
-  <!-- <Indicaciones>--> 
+  <!-- <Indications>--> 
       <section class="indications">
         Encuentra a tu pokemon favorito!
       </section>
-  <!-- <Boton de busqueda>--> 
+  <!-- <Search by Name>--> 
       <section class="search">
         <label for="name">¿Qué Pokemon buscas?</label>
         <input type="name" id="pokemonName" class="name" placeholder="Nombre del Pokemon">
         <button id="search" class="button">Search</button>
       </section>
-  <!-- <Boton para mostrar todos los Pokemon>--> 
+  <!-- <Button to show all Pokemons and Order by Name>--> 
       <section class="allPokemon">
         <input type="button" id ="showAllPokemon" class="button" name="" value="See All Pokemon">
-      </section>
-  <!-- <Botones de filtrado por Tipo>--> 
+        <input type="button" id ="alphabeticalOrder" class="button" name="" value="Ordenalos alfabeticamete">
+        <input type="button" id ="numericOrder" class="button" name="" value="Ordenalos por nombre">
+      </section> 
+  <!-- <Buttons to filter by type>--> 
       <section class="buttonType" id= "buttonType">
         <input type="image" id="Grass" class="buttonByType" title="Grass">
         <input type="image" id="Poison" class="buttonByType" title="Poison">
@@ -43,15 +45,27 @@
         <input type="image" id="Ice" class="buttonByType" title="Ice">
         <input type="image" id="Ghost" class="buttonByType" title="Ghost">
         <input type="image" id="Dragon" class="buttonByType" title="Dragon">
-  <!-- <Mostrar Todos los Pokemones>--> 
-      <div id= "contentAll" class="showAll"></div>
-  <!-- <Mostrar Filtrado>-->     
-        <span id= "showFilter"></span>
       </section>
-  <!-- <Mostrar Pokemon Nombrado>--> 
-      <div id="content"></div>
-      <span id="result">Nada</span>
-          
+  <!-- <Show all Pokemons>--> 
+      <div id= "contentAll" class="contentAll">
+        <a href= #info></a>
+        </a><img src="";>
+      </div>  
+  <!-- <Show results  of filter by type>-->
+      <div id="contentByType" class="contentByType">     
+        <a href= #type></a>
+        </a><img src="";>
+      </div>  
+  <!-- <show Pokemon named>--> 
+      <div id="contentPokemonNamed" class="contentPokemonNamed">
+        <a href= #type></a>
+        </a><img src="";>
+      </div> 
+  <!-- <Order Pokemons alphabetic>--> 
+      <div id="contentOrderPokemons" class="contentOrderPokemons">
+        <a href= #type></a>
+        </a><img src="";>
+      </div>     
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
