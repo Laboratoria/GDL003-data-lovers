@@ -11,7 +11,6 @@ const toShow =() =>{
     let defense = value.info.defense;
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
-
     document.getElementById("galeria").innerHTML +=
     " " +
      `
