@@ -15,11 +15,11 @@ const toShow =() =>{
     let difficulty = value.info.difficulty;
     let tags = value.tags;
     //console.log(tags);
-    
+
     let tagsIndex = tags.indexOf('Fighter');
-    
+
     //let tagsFilter = tags.filter(word => word == 'Fighter');
-    
+
     //if (attack >= 8 ){
     //if (tagsIndex > -1){
     //console.log(propName);
@@ -98,21 +98,21 @@ document.getElementById("galeria").style.display= "none"
   const pushBotton=()=>{
   //let pushBottonTop=document.getElementById("TOP").value;
    //pushBottonTop= 1;
-   
+
    let resFilter = filterData(dataLol, 'Fighter');
-   
+
    console.log(resFilter);
    //let filterCards = showCards(resFilter);
    ///let filterCards = showCards(resFilter);
    //showCards(resFilter);
    //console.log(resFilter);
-   
-   //document.getElementById("TOP").value= filter(dataLol, 'Fighter');    
+
+   //document.getElementById("TOP").value= filter(dataLol, 'Fighter');
    //console.log(pushBottonTop);
   }
 
 
-document.getElementById("TOP").addEventListener("click",pushBotton);
+document.getElementById("TOP").addEventListener("click",showCards);
 //document.getElementById("TOP").addEventListener("click",showCards);
 };
 
