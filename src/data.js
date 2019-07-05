@@ -4,8 +4,31 @@
 
 
   const filterData= (data, condition) => {
-
-    return 'filterData';
+    //const filter =(dataLol,chooseRol) =>{
+      let filterNames =[];
+      for (let propName in data) {
+        let value = dataLol[propName];
+        let image = value.img;
+        let title = value.title;
+        let attack=  value.info.attack;
+        let defense = value.info.defense;
+        let magic = value.info.magic;
+        let difficulty = value.info.difficulty;
+        let tags = value.tags;
+        //console.log(tags);
+        
+        let tagsIndex = tags.indexOf(condition);//condition: Fighter 
+        
+        //if (attack >= 8 ){
+        if (tagsIndex > -1){
+          filterNames.push(propName);
+          
+          //console.log(propName);
+        // console.log(tagsIndex);
+        }
+      }
+     // console.log(filterNames);
+    return filterNames;
   };
 
   const sortData = (data, sortOrder) => {
