@@ -356,6 +356,8 @@ dragonFilerButton.addEventListener("click", () => {
 const alphabeticalOrderButton = document.getElementById("alphabeticalOrder")
 const dataPokemon = POKEMON.pokemon;
 alphabeticalOrderButton.addEventListener("click", () => {
+    containerByType.innerHTML="";
+
 
   let orderAlphabetic = dataPokemon.sort(function (a, b) {
     if (a.name > b.name) {
@@ -383,7 +385,9 @@ alphabeticalOrderButton.addEventListener("click", () => {
 const numericOrderButton = document.getElementById("numericOrder")
 const dataPokemon1 = POKEMON.pokemon;
 numericOrderButton.addEventListener("click", () => {
-  
+    containerByType.innerHTML="";
+
+
   let orderByNumber = dataPokemon1.sort(function (a, b) {
     if (a.num > b.num) {
       return 1;
