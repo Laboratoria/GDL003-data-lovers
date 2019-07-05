@@ -419,3 +419,98 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
+
+-----------------------------------
+
+# Data Lovers
+
+## Índice
+
+- [Descripción](#resumen-del-proyecto)
+- [Consideraciones generales](#consideraciones-generales)
+- [Consideraciones técnicas](#consideraciones-técnicas)
+
+---
+
+
+## Resumen del proyecto
+
+En este proyecto construimos una página web dedicada a Pokemon donde podrás encontrar la información básica de un listado de 150 pokemones. 
+
+- ¿Quiénes son los principales usuarios de producto?
+Jugadores de Pokemon Go de cualquier nivel o simples curiosos de Pokemon 
+- ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Mejorar su experiencia de juego y conocimiento de los pokemones 
+- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+Los diferentes filtrados por tipo, orden alfabético y por número. A través de una encuesta nos dimos cuenta que eran los datos más importantes para el público seguidor de Pokemon. 
+- ¿Cuándo utilizan o utilizarían el producto?
+En cualquier etapa del juego o previo a él
+
+
+
+### Historias de usuario
+
+- Historia de usuario 1: el usuario necesita una herramienta que le muestre todos los pokemones
+Definition of done: Mostrar lista de pokemones completa. 
+-Historia de usuario 2: el usuario necesita filtrar los pokemones por tipo, mostrando foto, número, nombre y tipo. Ordenarlos por número o en orden alfabético
+Definition of done: filtrar por tipo, mostrar datos y fotografía
+
+#### Prototipo de baja fidelidad 
+
+
+
+
+
+#### Prototipo de alta fidelidad
+
+
+
+
+
+#### Testeos de usabilidad
+
+(Descripción)
+
+### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+
+Nuestra implementación de interfaz puede:
+
+1. Mostrar la data en una interfaz.
+2. Permitir al usuario filtrar y ordenar la data por tipo, por orden alfabético y por número. También se muestra la lista completa de pokemones. 
+4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
+   tablets y desktops.
+
+## Consideraciones técnicas
+
+La lógica de este proyecto está implementada completamente en JavaScript
+(ES6), HTML y CSS. 
+
+### src/index.html
+
+Aquí podrás encontrar la página que se mostrará al usuario. También nos sirve para
+indicar qué scripts se usarán y unir todo lo que hemos hecho.
+
+
+### src/main.js
+
+Usamos src/main.js para todo el código que tiene que ver con
+mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
+interacción con el DOM. Operaciones como creación de nodos, registro de
+manejadores de eventos (event listeners o event handlers), ....
+
+
+### src/data.js
+
+El corazón de este proyecto es la manipulación de datos a través de arreglos y
+objetos. La idea de este archivo es contener toda la funcionalidad
+que corresponda a obtener, procesar y manipular datos.
+
+
+### src/data
+
+En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
+carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
+extensión .js y otro .json. Ambos archivos contienen la misma data; la
+diferencia es que el .js lo usaremos a través de una etiqueta <script>,
+mientras que el .json está ahí para opcionalmente cargar la data de forma
+asíncrona con [`fetch()`]. Nosotras usamos la extensión .js.

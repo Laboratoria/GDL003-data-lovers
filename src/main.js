@@ -7,39 +7,41 @@ buttonAllPokemon.addEventListener("click", () => {
   let all = buttonAllPokemon.value;
   let  allPokemonInformation = POKEMON.pokemon.forEach(infoPokemon => {
     const template = `
+    <div id= "allPokemons" class="allPokemons"><br> 
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.type}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Tipo - ${infoPokemon.type}</p>
+      <p>Caramelos - Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>
     `
     containerByType.innerHTML += template
   })
 });
 
 //Buttons for type
-let grassFilerButton = document.getElementById('Grass');
-let poisonFilerButton = document.getElementById('Poison');
-let fireFilerButton = document.getElementById('Fire');
-let flyingFilerButton = document.getElementById('Flying');
-let waterFilerButton = document.getElementById('Water');
-let bugFilerButton = document.getElementById('Bug');
-let normalFilerButton = document.getElementById('Normal');
-let electricFilerButton = document.getElementById('Electric');
-let groundFilerButton = document.getElementById('Ground');
-let fightingFilerButton = document.getElementById('Fighting');
-let psychicFilerButton = document.getElementById('Psychic');
-let rockFilerButton = document.getElementById('Rock');
-let iceFilerButton = document.getElementById('Ice');
-let ghostFilerButton = document.getElementById('Ghost');
-let dragonFilerButton = document.getElementById('Dragon');
+let grassFilterButton = document.getElementById('Grass');
+let poisonFilterButton = document.getElementById('Poison');
+let fireFilterButton = document.getElementById('Fire');
+let flyingFilterButton = document.getElementById('Flying');
+let waterFilterButton = document.getElementById('Water');
+let bugFilterButton = document.getElementById('Bug');
+let normalFilterButton = document.getElementById('Normal');
+let electricFilterButton = document.getElementById('Electric');
+let groundFilterButton = document.getElementById('Ground');
+let fightingFilterButton = document.getElementById('Fighting');
+let psychicFilterButton = document.getElementById('Psychic');
+let rockFilterButton = document.getElementById('Rock');
+let iceFilterButton = document.getElementById('Ice');
+let ghostFilterButton = document.getElementById('Ghost');
+let dragonFilterButton = document.getElementById('Dragon');
 
 //Function to filter Pokemons by Grass type
 const containerByType = document.getElementById('contentByType');
-grassFilerButton.addEventListener("click", () => {
+grassFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
   
-  let grassType = grassFilerButton.value;
+  let grassType = grassFilterButton.value;
   console.log("allPokemonsCounter = " + POKEMON.pokemon.length); 
   
   let filterGrass = POKEMON.pokemon.filter(pokemon => { 
@@ -49,20 +51,22 @@ grassFilerButton.addEventListener("click", () => {
   
     filterGrass.forEach((infoPokemon) => {
     const template = `
+    <div id= "tipeOfPokemons" class="tipeOfPokemons"><br><br>  
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>
     `
       containerByType.innerHTML += template
     })
 }); 
 
 //Function to filter Pokemons by Poison type
-poisonFilerButton.addEventListener("click", () => {
+poisonFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
   
-  let poisonType = poisonFilerButton.value;
+  let poisonType = poisonFilterButton.value;
   let filterPoison = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Poison') != -1);
   });
@@ -70,20 +74,22 @@ poisonFilerButton.addEventListener("click", () => {
 
     filterPoison.forEach((infoPokemon) => {
     const template = `
+    <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>  
     `
     containerByType.innerHTML += template
     })
 }); 
 
 //Function to filter Pokemons by Fire type
-fireFilerButton.addEventListener("click", () => {
+fireFilterButton.addEventListener("click", () => {
     containerByType.innerHTML="";
 
-  let fireType = fireFilerButton.value;
+  let fireType = fireFilterButton.value;
   let filterFire = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Fire') != -1);
   });
@@ -91,41 +97,45 @@ fireFilerButton.addEventListener("click", () => {
 
     filterFire.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 }); 
 
 //Function to filter Pokemons by Flying type
-flyingFilerButton.addEventListener("click", () => {
+flyingFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let flyingType = flyingFilerButton.value;
-  let filterflying = POKEMON.pokemon.filter(pokemon => { 
+  let flyingType = flyingFilterButton.value;
+  let filterFlying = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Flying') != -1);
   });
-    console.log(filterflying);
+    console.log(filterFlying);
     
     filterFlying.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Water type
-waterFilerButton.addEventListener("click", () => {
+waterFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let waterType = waterFilerButton.value;
+  let waterType = waterFilterButton.value;
   let filterWater = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Water') != -1);
   });
@@ -133,20 +143,22 @@ waterFilerButton.addEventListener("click", () => {
 
     filterWater.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Bug type
-bugFilerButton.addEventListener("click", () => {
+bugFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let bugType = bugFilerButton.value;
+  let bugType = bugFilterButton.value;
   let filterBug = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Bug') != -1);
   });
@@ -154,20 +166,22 @@ bugFilerButton.addEventListener("click", () => {
 
     filterBug.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Normal type
-normalFilerButton.addEventListener("click", () => {
+normalFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let normalType = normalFilerButton.value;
+  let normalType = normalFilterButton.value;
   let filterNormal = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Normal') != -1);
   });
@@ -175,20 +189,22 @@ normalFilerButton.addEventListener("click", () => {
 
     filterNormal.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Electric type
-electricFilerButton.addEventListener("click", () => {
+electricFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let electricType = electricFilerButton.value;
+  let electricType = electricFilterButton.value;
   let filterElectric = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Electric') != -1);
   });
@@ -196,20 +212,22 @@ electricFilerButton.addEventListener("click", () => {
     
     filterElectric.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Ground type
-groundFilerButton.addEventListener("click", () => {
+groundFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let groundType = groundFilerButton.value;
+  let groundType = groundFilterButton.value;
   let filterGround = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Ground') != -1);
   });
@@ -217,62 +235,68 @@ groundFilerButton.addEventListener("click", () => {
 
     filterGround.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Fighting type
-fightingFilerButton.addEventListener("click", () => {
+fightingFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let fightingType = fightingFilerButton.value;
+  let fightingType = fightingFilterButton.value;
   let filterFighting = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Fighting') != -1);
   });
     console.log(filterFighting); 
 
-    filterfighting.forEach((infoPokemon) => {
+    filterFighting.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Psychic type
-psychicFilerButton.addEventListener("click", () => {
+psychicFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let psychicType = psychicFilerButton.value;
+  let psychicType = psychicFilterButton.value;
   let filterPsychic = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Psychic') != -1);
   });
     console.log(filterPsychic); 
 
-    filterpsychic.forEach((infoPokemon) => {
+    filterPsychic.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Rock type
-rockFilerButton.addEventListener("click", () => {
+rockFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let rockType = rockFilerButton.value;
+  let rockType = rockFilterButton.value;
   let filterRock = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Rock') != -1);
   });
@@ -280,20 +304,22 @@ rockFilerButton.addEventListener("click", () => {
 
     filterRock.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Ice type
-iceFilerButton.addEventListener("click", () => {
+iceFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let iceType = iceFilerButton.value;
+  let iceType = iceFilterButton.value;
   let filterIce = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Ice') != -1);
   });
@@ -301,20 +327,22 @@ iceFilerButton.addEventListener("click", () => {
 
     filterIce.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Ghost type
-ghostFilerButton.addEventListener("click", () => {
+ghostFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
 
-  let ghostType = ghostFilerButton.value;
+  let ghostType = ghostFilterButton.value;
   let filterGhost = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Ghost') != -1);
   });
@@ -322,20 +350,22 @@ ghostFilerButton.addEventListener("click", () => {
 
     filterGhost.forEach((infoPokemon) => {
       const template = `
+      <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
         <p>${infoPokemon.name}</p>
         <img src="${infoPokemon.img}" alt="pokemon picture"/>
-        <p>${infoPokemon.num}</p>
-        <p>${infoPokemon.candy_count}</p> <br>
+        <p>Pokemon - ${infoPokemon.num}</p>
+        <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+      </div>
       `
       containerByType.innerHTML += template
     })
 });
 
 //Function to filter Pokemons by Dragon type
-dragonFilerButton.addEventListener("click", () => {
+dragonFilterButton.addEventListener("click", () => {
     containerByType.innerHTML="";
 
-  let dragonType = dragonFilerButton.value;
+  let dragonType = dragonFilterButton.value;
   let filterDragon = POKEMON.pokemon.filter(pokemon => { 
     return (pokemon.type.indexOf('Dragon') != -1);
   });
@@ -343,10 +373,12 @@ dragonFilerButton.addEventListener("click", () => {
 
   filterDragon.forEach((infoPokemon) => {
     const template = `
+    <div id= "tipeOfPokemons" class="tipeOfPokemons"><br> 
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>
     `
     containerByType.innerHTML += template
   })
@@ -372,10 +404,13 @@ alphabeticalOrderButton.addEventListener("click", () => {
 
   orderAlphabetic.forEach((infoPokemon) => {
     const template = `
+    <div id= "allPokemons" class="allPokemons"><br> 
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Tipo - ${infoPokemon.type}</p>
+      <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>
     `
     containerByType.innerHTML += template
   })
@@ -401,10 +436,13 @@ numericOrderButton.addEventListener("click", () => {
 
   orderByNumber.forEach((infoPokemon) => {
     const template = `
+    <div id= "allPokemons" class="allPokemons"><br> 
       <p>${infoPokemon.name}</p>
       <img src="${infoPokemon.img}" alt="pokemon picture"/>
-      <p>${infoPokemon.num}</p>
-      <p>${infoPokemon.candy_count}</p> <br>
+      <p>Pokemon - ${infoPokemon.num}</p>
+      <p>Tipo - ${infoPokemon.type}</p>
+      <p>Caramelos - ${infoPokemon.candy_count}</p> <br>
+    </div>
     `
     containerByType.innerHTML += template
   })

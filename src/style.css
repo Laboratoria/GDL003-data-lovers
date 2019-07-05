@@ -11,8 +11,8 @@ body{
     font-size: 15px;
     padding-top: 200px;
     transition: padding-top 0.5s ease;
-    margin-bottom: 2rem;
-    line-height: 1;
+    margin-bottom: 1rem;
+    line-height: 1rem;
     background-image: url(https://cdn2.hubspot.net/hubfs/1556449/imagenes-blog/El-Gran-potencial-de-Marketing-de-Poke%CC%81mon-Go.png);
     background-attachment: fixed;
     background-size: cover; 
@@ -43,9 +43,197 @@ header{
 }
 #showAllPokemon {
     background-image: url(https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif);
-    width:25rem;
-    margin:2rem;
-    padding:10rem;
+    margin: 2rem;
+    padding: 8rem;
+    font-weight: 50;
+    text-align: left;
+    background: cover;
+    background-repeat: no-repeat;
+    width: 16rem; 
+    height: 16rem;
+    background-size: 16rem 16rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+#alphabeticalOrder {
+    background-image: url(https://media.giphy.com/media/rAm0u2k17rM3e/giphy.gif);
+    margin: 2rem;
+    padding: 8rem;
     font-weight: 100;
-    text-align:right;
+    text-align: left;
+    background: cover;
+    background-repeat: no-repeat;
+    width: 16rem; 
+    height: 16rem;
+    background-size: 16rem 16rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+#numericOrder {
+    background-image: url(https://media.giphy.com/media/S4mv3vJ4iFjvq/giphy.gif);
+    margin: 2rem;
+    padding: 8rem;
+    font-weight: 100;
+    text-align: left;
+    background: cover;
+    background-repeat: no-repeat;
+    width: 16rem; 
+    height: 16rem;
+    background-size: 16rem 16rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.allPokemons {
+    margin: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color : black;
+    width: 17rem; 
+    height: 14rem;
+    background-color: #abdff3;
+}
+.tipeOfPokemons {
+    margin: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color : black;
+    width: 17rem; 
+    height: 14rem;
+    background-color: #dd92d7;
+}
+.grass {
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/planta.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+
+.poison {
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/veneno.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.fire {
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/fuego.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.flying{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/volador.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.water{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/agua.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.bug{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/bicho.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.normal{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/normal.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.electric{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/electrico.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.ground{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/tierra.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.fighting{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/lucha.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.psychic{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/psiquico.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.rock{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/roca.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.ice{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/hielo.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.ghost{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/fantasma.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
+}
+.dragon{
+    background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/dragon.gif);
+    background: cover;
+    background-repeat: no-repeat;
+    width: 3.5rem; 
+    height: 2.5rem;
+    background-size: 3.5rem 2.5rem;
+    margin: .8rem;
 }
