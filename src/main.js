@@ -11,6 +11,8 @@ const toShow =() =>{
     let defense = value.info.defense;
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
+    let tags = value.tags;
+
     document.getElementById("galeria").innerHTML +=
     " " +
      `
@@ -42,9 +44,13 @@ document.getElementById("mapaRol").style.display= 'block';
 document.getElementById("galeria").style.display= "none"
 
   const pushButton=()=>{
-  document.getElementById("TOP").value=Tank;
-  console.log();
-  document.getElementById("MID").value=Fighter;
+  let pushButtonTop= document.getElementById("TOP").value;
+  if (pushButton===Str) {
+    console.log(pushButtonTop);
+  }
+  let pushButtonMid=document.getElementById("MID").value;
+  console.log(pushButtonTop);
+  console.log(pushButtonMid);
 
 
 
@@ -55,3 +61,18 @@ document.getElementById("MID").addEventListener("click",pushButton);
 }
 
 document.getElementById("rol").addEventListener("click",mapByRol);
+
+
+const filterDta =()=>{
+  let dataLol =LOL.data;
+  for (let propName in dataLol){
+    let value = dataLol[propName];
+    let tags = value.tags;
+    let tagsIndex = tags.indexOf('Fighter')
+    if (tagsIndex > -1){
+      console.log(propName);
+      console.log(tagsIndex);
+
+    }
+  }
+}
