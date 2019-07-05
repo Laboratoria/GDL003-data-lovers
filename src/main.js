@@ -4,7 +4,8 @@ let dataLol =LOL.data;
 
 const toShow =() =>{
   let dataLol =LOL.data;
-  for (let propName in dataLol) {
+  for (let {{Aatrox}:propName} in dataLol) {
+  //for (let propName in dataLol) {
     let value = dataLol[propName];
     let image = value.img;
     let title = value.title;
