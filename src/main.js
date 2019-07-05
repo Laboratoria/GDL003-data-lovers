@@ -4,8 +4,9 @@ let dataLol =LOL.data;
 
 const toShow =() =>{
   let dataLol =LOL.data;
-  //for (let {{Aatrox}:propName} in dataLol) {
+  //for (let {propName = 'Aatrox'} in dataLol) {
   for (let propName in dataLol) {
+    
     let value = dataLol[propName];
     let image = value.img;
     let title = value.title;
@@ -49,11 +50,12 @@ const toShow =() =>{
   }
 };
 
-const showCards =() =>{
+const showCards =(filterRol) =>{
   let dataLol =LOL.data;
   //let resFilter = filterData(dataLol, 'Fighter');
   //let propName = filterName;
   for (let propName in dataLol) {
+  if(propName =='Aatrox'){
     let value = dataLol[propName];
     let image = value.img;
     let title = value.title;
@@ -62,10 +64,18 @@ const showCards =() =>{
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
     let tags = value.tags;
+    //console.log(tags);
+    
     let tagsIndex = tags.indexOf('Fighter');
-  //  console.log(value);
+    
+    //let tagsFilter = tags.filter(word => word == 'Fighter');
+    
+    //if (attack >= 8 ){
+    //if (tagsIndex > -1){
+    //console.log(propName);
+   // console.log(tagsIndex);
 
-    document.getElementById("galeria").innerHTML +=
+    document.getElementById("galeriaFiltro").innerHTML +=
     " " +
      `
     <div class="boxesContainer">
@@ -86,6 +96,7 @@ const showCards =() =>{
           </div>
         </div>
       </div>`;
+    }
   }
 };
 
@@ -104,7 +115,8 @@ document.getElementById("galeria").style.display= "none"
    console.log(resFilter);
    //let filterCards = showCards(resFilter);
    ///let filterCards = showCards(resFilter);
-   //showCards(resFilter);
+
+   showCards(resFilter);
    //console.log(resFilter);
    
    //document.getElementById("TOP").value= filter(dataLol, 'Fighter');    
