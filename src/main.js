@@ -41,14 +41,16 @@ const mapByRol=()=> {
 document.getElementById("mapaRol").style.display= 'block';
 document.getElementById("galeria").style.display= "none"
 
-  const pushBotton=()=>{
-  let pushBottonTop=document.getElementById("TOP").value
-  pushBottonTop=1
-  console.log(pushBottonTop);
+  const pushButton=()=>{
+  document.getElementById("TOP").value=Tank;
+  console.log();
+  document.getElementById("MID").value=Fighter;
+
 
 
   }
-document.getElementById("TOP").addEventListener("click",pushBotton);
+document.getElementById("TOP").addEventListener("click",pushButton);
+document.getElementById("MID").addEventListener("click",pushButton);
 
 }
 
