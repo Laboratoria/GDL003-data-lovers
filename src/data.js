@@ -17,7 +17,7 @@
         let tags = value.tags;
         //console.log(tags);
         
-        let tagsIndex = tags.indexOf(condition);//condition: Fighter 
+        let tagsIndex = tags.indexOf(condition);//condition: 'Fighter'
         
         //if (attack >= 8 ){
         if (tagsIndex > -1){
