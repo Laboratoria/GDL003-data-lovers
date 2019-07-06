@@ -52,6 +52,7 @@ const showCards =(filterRol) =>{
       let magic = value.info.magic;
       let difficulty = value.info.difficulty;
       let tags = value.tags;
+
       document.getElementById("galeriaFiltro").innerHTML +=
       " " +
       `

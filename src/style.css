@@ -43,7 +43,7 @@ h3 {
 .cardBox {
   background-color: black;
   float: left;
-  font-size: .75em;
+  font-size: .5em;
   margin: 1% 0 0 1%;
   perspective: 100%;
   transition: all 0.3s ease 0s;
