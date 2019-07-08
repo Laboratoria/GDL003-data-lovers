@@ -1,4 +1,3 @@
-
 html{
   width: 100%;
   min-height:100%;
@@ -7,17 +6,6 @@ html{
  background-color: black;
   background-size: 100%;
   }
-
-
-body {
-  font-family: "Raleway", Arial, Helvetica, serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-
-}
 
 h3 {
   color: white;
@@ -28,17 +16,34 @@ h3 {
 }
 
 .header{
-  background-image: url(https://www.cccneb.edu/programs/cccmart/gallery/graphic_arts/web/1803rigo/FinalProject/images/League_of_legends.gif);
+  background-image: url(img/menuLOL.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 25%;
-  padding-bottom: 0;
-  width:58.33%;
+  padding: 17%;
+  
 }
 
-.champions .mapa .rol{
-  float: right;
+.champions, .mapa, .rol, .TOP, .MID, .JUNGLE, .BOT, .SUPPORT{
+  color: rgb(247, 255, 87); 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 6px; 
+  border-radius: 8px; 
+  font-family: Georgia, serif; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(62, 101, 74) 0%, rgb(123, 178, 114) 50%, rgb(84, 117, 78) 100%); 
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+  border: 2px solid rgb(107, 142, 81); 
+  display: inline-block;
 }
+  .champions:hover, .mapa:hover, .rol:hover{
+  background: #3E654A; }
+  .champions:active, .mapa:active, .mapa:active {
+  background: #54754E; }
 
 .cardBox {
   background-color: black;
@@ -125,12 +130,7 @@ h3 {
   padding: 20%;
   padding-top: 0;
   width:58.33%;
-
-
-}
-
 }
 
 .TOP .JUNGLE .BOT .SUPPORT{
-
 }
