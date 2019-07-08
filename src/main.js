@@ -1,9 +1,11 @@
 //Fuction to show all Pokemons
 const buttonAllPokemon = document.getElementById('showAllPokemon');
+const containerByType = document.getElementById('contentByType');
 const container = document.getElementById('contentAll');
 
 buttonAllPokemon.addEventListener("click", () => {
     container.innerHTML="";
+    containerByType.innerHTML="";
   let all = buttonAllPokemon.value;
   let  allPokemonInformation = POKEMON.pokemon.forEach(infoPokemon => {
     const template = `
@@ -37,7 +39,6 @@ let ghostFilterButton = document.getElementById('Ghost');
 let dragonFilterButton = document.getElementById('Dragon');
 
 //Function to filter Pokemons by Grass type
-const containerByType = document.getElementById('contentByType');
 grassFilterButton.addEventListener("click", () => {
   containerByType.innerHTML="";
   
