@@ -1,5 +1,5 @@
 require('../src/data.js');
-const LOL = require('../src/data/lol/lol.json');
+const LOLtest = require('../src/data/lol/lol.json');
 
 describe('dataLovers', () => {
 
@@ -13,7 +13,7 @@ describe('dataLovers', () => {
     });
 
     it('returns `filterData`', () => {
-      expect(dataLovers.filterData(LOL.data,'Fighter')[0]).toBe('Aatrox');
+      expect(dataLovers.filterData(LOLtest.data,'Fighter')[0]).toBe('Aatrox');
     });
   });
 

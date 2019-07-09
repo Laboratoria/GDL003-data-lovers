@@ -2,7 +2,7 @@
 document.getElementById("mapaRol").style.display='none';
 
 const toShow =() =>{
-  let dataLol =LOL.data;
+  let dataLol = LOL.data;
   for (let propName in dataLol) {
     let value = dataLol[propName];
     let image = value.img;
