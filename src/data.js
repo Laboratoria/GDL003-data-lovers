@@ -18,7 +18,7 @@
           filterNames.push(propName);
 
           //console.log(propName);
-         console.log(tagsIndex);
+        // console.log(tagsIndex);
         }
       }
      // console.log(filterNames);
