@@ -1,10 +1,10 @@
 require('../src/data.js');
-/*
+
 describe('dataLovers', () => {
 
   it('debería ser un objeto', () => {
     expect(typeof dataLovers).toBe('object');
-  });*/
+  });
 
   describe('filterData', () => {
     it('is a function', () => {
@@ -35,10 +35,10 @@ describe('dataLovers', () => {
       expect(dataLovers.computeStats()).toBe('computeStats');
     });
   });
-/*
+
 });
 
-
+/*
 require('../src/data.js');
 
 

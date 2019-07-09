@@ -1,6 +1,6 @@
 //INDEX
-document.getElementById("mapaRol").style.display='none'
-let dataLol =LOL.data;
+document.getElementById("mapaRol").style.display='none';
+let LOL;
 
 const toShow =() =>{
   let dataLol =LOL.data;
@@ -12,7 +12,6 @@ const toShow =() =>{
     let defense = value.info.defense;
     let magic = value.info.magic;
     let difficulty = value.info.difficulty;
-    let tags = value.tags;
     document.getElementById("galeria").innerHTML +=
     " " +
      `
@@ -39,10 +38,10 @@ const toShow =() =>{
 
 const showCards =(filterRol) =>{
   let dataLol =LOL.data;
-  let resFilter = filterData(dataLol, filterRol);
+  let resFilter = window.dataLovers.filterData(dataLol, filterRol);
   resFilter.forEach(element => {
     //console.log(element);
-    for (propName in dataLol) {
+    for (let propName in dataLol) {
       if(propName == element){
       let value = dataLol[propName];
       let image = value.img;
@@ -51,7 +50,6 @@ const showCards =(filterRol) =>{
       let defense = value.info.defense;
       let magic = value.info.magic;
       let difficulty = value.info.difficulty;
-      let tags = value.tags;
 
       document.getElementById("galeriaFiltro").innerHTML +=
       " " +
@@ -83,28 +81,28 @@ document.getElementById("champions").addEventListener("click",toShow);
 
 const mapByRol=()=> {
 document.getElementById("mapaRol").style.display= 'block';
-document.getElementById("galeria").style.display= "none"
+document.getElementById("galeria").style.display= "none";
 
  const pushBottonTOP=()=>{
    showCards('Fighter');
-  }
+  };
  const pushBottonMID=()=>{
    showCards('Tank');
- }
-const pushBottonJUNGLE=()=>{
-  showCards('Mage');
-}
-const pushBottonBOT=()=>{
-  showCards('Assassin');
-}
-const pushBottonSUPPORT=()=>{
-  showCards('Support');
-}
-document.getElementById("TOP").addEventListener("click",pushBottonTOP);
-document.getElementById("MID").addEventListener("click",pushBottonMID);
-document.getElementById("JUNGLE").addEventListener("click",pushBottonJUNGLE);
-document.getElementById("BOT").addEventListener("click",pushBottonBOT);
-document.getElementById("SUPPORT").addEventListener("click",pushBottonSUPPORT);
+  };
+  const pushBottonJUNGLE=()=>{
+   showCards('Mage');
+  };
+  const pushBottonBOT=()=>{
+   showCards('Assassin');
+  };
+  const pushBottonSUPPORT=()=>{
+   showCards('Support');
+  };
+  document.getElementById("TOP").addEventListener("click",pushBottonTOP);
+  document.getElementById("MID").addEventListener("click",pushBottonMID);
+  document.getElementById("JUNGLE").addEventListener("click",pushBottonJUNGLE);
+  document.getElementById("BOT").addEventListener("click",pushBottonBOT);
+  document.getElementById("SUPPORT").addEventListener("click",pushBottonSUPPORT);
 };
 
 document.getElementById("rol").addEventListener("click",mapByRol);

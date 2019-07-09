@@ -7,13 +7,7 @@
     //const filter =(dataLol,chooseRol) =>{
       let filterNames =[];
       for (let propName in data) {
-        let value = dataLol[propName];
-        let image = value.img;
-        let title = value.title;
-        let attack=  value.info.attack;
-        let defense = value.info.defense;
-        let magic = value.info.magic;
-        let difficulty = value.info.difficulty;
+        let value = data[propName];
         let tags = value.tags;
         //console.log(tags);
 
@@ -31,11 +25,11 @@
     return filterNames;
   };
 
-  const sortData = (data, sortOrder) => {
+  const sortData = () => {
     return 'sortData';
   };
 
-  const computeStats = (data) => {
+  const computeStats = () => {
     return 'computeStats';
   };
 
