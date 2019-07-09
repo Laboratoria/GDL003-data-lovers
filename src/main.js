@@ -1,6 +1,5 @@
 //INDEX
 document.getElementById("mapaRol").style.display='none';
-let LOL;
 
 const toShow =() =>{
   let dataLol =LOL.data;

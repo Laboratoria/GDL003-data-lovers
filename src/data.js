@@ -10,18 +10,15 @@
         let value = data[propName];
         let tags = value.tags;
         //console.log(tags);
-
         let tagsIndex = tags.indexOf(condition);//condition: 'Fighter'
-
         //if (attack >= 8 ){
         if (tagsIndex > -1){
           filterNames.push(propName);
-
           //console.log(propName);
-        // console.log(tagsIndex);
+          //console.log(tagsIndex);
         }
       }
-     // console.log(filterNames);
+    //console.log(filterNames);
     return filterNames;
   };
 
