@@ -4,6 +4,7 @@
     border: 0;
     vertical-align: baseline;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 body{
     font-family:Helvetica,Arial,sans-serif;
@@ -89,6 +90,7 @@ header{
     width: 17rem; 
     height: 14rem;
     background-color: #abdff3;
+    float: left;
 }
 .tipeOfPokemons {
     margin: 2rem;
@@ -99,6 +101,7 @@ header{
     height: 14rem;
     font-weight: bold;
     background-color: #dd92d7;
+    float: left;
 }
 .grass {
     background-image: url(https://www.pkparaiso.com/imagenes/xy/sprites/tipos/planta.gif);
@@ -250,3 +253,4 @@ header{
     margin: .8rem;
     cursor: pointer;
 }
+
