@@ -1,0 +1,140 @@
+html{
+  width: 100%;
+  min-height:100%;
+  overflow-y:scroll;
+  /*background:#000; */
+  /*background-image: url(img/Fondo2.jpg);*/
+  background-color: black;
+  background-size: 100%;
+  }
+
+h3 {
+  color: white;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+
+.header{
+  /*background-image: url(img/menuLOL.jpg);*/
+  background-image: url(img/Fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 17%;
+  
+}
+
+.champions, .mapa, .rol, .TOP, .MID, .JUNGLE, .BOT, .SUPPORT{
+  color: rgb(247, 255, 87); 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 6px; 
+  border-radius: 8px; 
+  font-family: Georgia, serif; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(62, 101, 74) 0%, rgb(123, 178, 114) 50%, rgb(84, 117, 78) 100%); 
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+  border: 2px solid rgb(107, 142, 81); 
+  display: inline-block;
+}
+  .champions:hover, .mapa:hover, .rol:hover,
+  .TOP:hover, .MID:hover, .JUNGLE:hover, .BOT:hover, .SUPPORT:hover{
+  background: #3E654A; }
+  .champions:active, .mapa:active, .mapa:active,
+  .TOP:active, .MID:active, .JUNGLE:active, .BOT:active, .SUPPORT:active{
+  background: #54754E; }
+
+.cardBox {
+  background-color: black;
+  float: left;
+  font-size: .5em;
+  margin: 1% 0 0 1%;
+  perspective: 100%;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background: black;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1em;
+  font-size: 2em
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: black;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back  {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: black;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: red;
+  color: red;
+  text-shadow: 0 0 1px white;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: white;
+}
+
+
+.mapaRol{
+  background-image: url(http://i.imgur.com/KxqgIoU.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20%;
+  padding-top: 0;
+  width:58.33%;
+}
+
+.TOP .JUNGLE .BOT .SUPPORT{
+}

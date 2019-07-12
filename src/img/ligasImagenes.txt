@@ -1,0 +1,14 @@
+imagenes
+https://euw.leagueoflegends.com/es/news/game-updates/competitive/10-bloqueos-para-partidas-normales-muy-pronto
+regiones:
+https://universe.leagueoflegends.com/es_ES/region/bilgewater/
+
+RegionesMap
+https://map.leagueoflegends.com/es_ES
+
+imagen: MagmaChamberMap
+http://trueleague.blogspot.com/2011/03/magma-chamber-upcoming-map.html
+
+
+imagen: lanes y mapsLanes
+https://www.genelmag.com/article/2018/2/22/league-of-legends-for-dummies-a-guide-part-1

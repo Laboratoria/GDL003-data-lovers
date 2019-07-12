@@ -2,17 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="header">
+      <div class="menu">
+        <button  id="champions" class="champions">CAMPEONES</button>
+        <!--<button  id="mapa" class="mapa">MAPA</button>-->
+        <button  id="rol" class="rol">ROL</button>
+      </div>
+    </div>
+    <div id="galeria" class="mosaico"></div>
+    <div id="mapaRol" class="mapaRol">
+      <button id="TOP" class="TOP">Fighter</button>
+      <button id="MID" class="MID">Tank</button>
+      <button id="JUNGLE" class="JUNGLE">Mage</button>
+      <button id="BOT" class="BOT">Assassin</button>
+      <button id="SUPPORT" class="SUPPORT" >Support</button>
+      <div id="galeriaFiltro" ></div>
+    </div>
+
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+
+
+
   </body>
 </html>
